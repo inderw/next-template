@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Mynav from "./components/Navbar";
+import Mynav from "./Navbar";
 import styles from '../styles/Home.module.scss';
 const about = () => {
     return(<>

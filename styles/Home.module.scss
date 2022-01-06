@@ -1,8 +1,27 @@
 
   .mynav{
-    background-color: rgba(10, 23, 41, 0.966)!important;
+    background-color: rgba(54, 24, 80, 0.966)!important;
+    color:white;
+    .itemmains{
+      color:white;
+      font-size: 1.5em;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .itemclick{
+      margin:10px;
+      cursor: pointer;
+    }
+     .navbar-toggler-icon {
+      background-color: white;
+      color:white!important;
+      border: none !important;
+    }
+    
+  //  .navbar-toggler {
+  //     border-color: rgb(255,102,203);
+  //     background-color: white;
+  //     color:white;
+  //   } 
   }
-
-
-
-
+  

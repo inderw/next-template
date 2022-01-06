@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Mynav from './components/Navbar';
+import Mynav from './Navbar';
 
 export default function Home() {
   return (

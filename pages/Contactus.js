@@ -1,11 +1,11 @@
-import styles from '../styles/Home.module.scss';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
-import Mynav from './components/Navbar';
+import Mynav from './Navbar';
 
 export default function ContactUs() {
     async function handleOnSubmit(e) {
@@ -29,7 +29,7 @@ export default function ContactUs() {
                     <Col>&nbsp;</Col>
                     <Col>
                         <br />
-                        <h1 className="text-center">Contact Us</h1>
+                        <h2 className="text-center">Contact Us</h2>
                         <br />
                         <Form method="post" onSubmit={handleOnSubmit} >
                             <Form.Group className="mb-3">
