@@ -9,11 +9,41 @@ const OwlCarousel= dynamic(
   )
 
 const Gallery = () => {
+  var settings = { 
+    centerMode: true, 
+    centerPadding: "0px", 
+    slidesToShow: 1, 
+    slidesToScroll: 1, 
+    dots: true, 
+    speed: 1200, 
+    focusOnSelect: true, 
+    arrows: false, 
+    autoplay: true, 
+    autoplaySpeed: 2000, 
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        800:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    } 
+  };
     return (
         <>
         <div className="Container px-5 mx-5 mt-5">
             <h1 className={styles.gl_head}>Featured Properties</h1>
-        <OwlCarousel className={styles.my_gallery} loop margin={20} items={3}  nav="true" dots="true" navClass>
+        <OwlCarousel className={styles.my_gallery} {...settings}loop margin={20}  nav="true" dots="true" navClass>
     <div className='item'>
     <Card className={styles.gl_card} >
   <Card.Img variant="top" src="https://i16.moxi.onl/img-pr-001441/sra/c97ec49b3c70747467a557f3e9a862e0cac82934/1_2_small.jpg" />

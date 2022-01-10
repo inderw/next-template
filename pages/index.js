@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Mynav from './Navbar';
 import Gallery from './Gallery/Gallery';
-
+import Profiles from './Profiles/Profiles';
 export default function Home() {
   return (
     <>
@@ -20,6 +20,7 @@ export default function Home() {
     
     }
      <Mynav />
+     <Profiles />
      <Gallery />
     </>
   )
