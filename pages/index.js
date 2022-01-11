@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import Script from 'next/script'
 import styles from '../styles/Home.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Mynav from './Navbar';
@@ -12,7 +12,7 @@ export default function Home() {
         <Head>
           <title> Home</title>
           <meta name="viewport" content="widht=device-width,initial-scale=1.0"></meta>
-          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <Script src="https://code.jquery.com/jquery-3.6.0.min.js"></Script>
         </Head>
 
       }
