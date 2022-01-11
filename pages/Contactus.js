@@ -6,7 +6,7 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import Mynav from './Navbar';
-import Head from 'next/head';
+
 
 export default function ContactUs() {
     async function handleOnSubmit(e) {
@@ -24,14 +24,7 @@ export default function ContactUs() {
     }
     return (
         <>
-            <Head>
-                <title>Contact Us</title>
-                <meta name="viewport" content="widht=device-width,initial-scale=1.0"></meta>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-                <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-
-            </Head>
+            
             <Mynav />
             <Container>
                 <Row>
