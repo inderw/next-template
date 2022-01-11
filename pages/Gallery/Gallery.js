@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {Card} from 'react-bootstrap';
 import styles from '../Gallery/Gallery.module.scss'
 import dynamic from 'next/dynamic';
@@ -10,8 +10,7 @@ const OwlCarousel= dynamic(
 
 const Gallery = () => {
   var settings = { 
-    centerMode: true, 
-    centerPadding: "0px", 
+    centerMode: true,  
     slidesToShow: 1, 
     slidesToScroll: 1, 
     dots: true, 
@@ -43,7 +42,7 @@ const Gallery = () => {
         <>
         <div className="Container px-5 mx-5 mt-5">
             <h1 className={styles.gl_head}>Featured Properties</h1>
-        <OwlCarousel className={styles.my_gallery} {...settings}loop margin={20}  nav="true" dots="true" navClass>
+        <OwlCarousel className={styles.my_gallery} {...settings}  margin={20}  nav="true" dots="true">
     <div className='item'>
     <Card className={styles.gl_card} >
   <Card.Img variant="top" src="https://i16.moxi.onl/img-pr-001441/sra/c97ec49b3c70747467a557f3e9a862e0cac82934/1_2_small.jpg" />
